@@ -8,7 +8,7 @@ function pingProblemController(req, res) {
 
 function addProblem(req, res, next){
     try {
-        throw new BadRequest("Problem name missing", {message :"missing problem name"});
+        throw new NotImplemented('Add problem');
     } catch (error) {
         next(error);
     }
